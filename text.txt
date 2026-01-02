@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RXR RANA Tarot</title>
+<style>
+    /* ====== Reset ====== */
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif;}
+    body {background-color: #0a0a0a; color: #ffffff; line-height: 1.6;}
+    a {text-decoration: none; color: inherit;}
+    /* ====== Header ====== */
+    header {display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; background: #0a0a0a;}
+    header h1 {color: #d4af37; font-size: 32px; letter-spacing: 2px;}
+    .lang-switch button {margin-left: 10px; padding: 5px 12px; border: 1px solid #d4af37; background: transparent; color: #d4af37; cursor: pointer; border-radius: 5px; font-weight: bold;}
+    .lang-switch button:hover {background: #d4af37; color: #0a0a0a;}
+    /* ====== Main Section ====== */
+    main {max-width: 900px; margin: 50px auto; text-align: center; padding: 0 20px;}
+    main h2 {color: #d4af37; font-size: 28px; margin-bottom: 30px;}
+    .card {background: #111111; border: 1px solid #d4af37; border-radius: 12px; padding: 20px; margin: 20px 0; transition: transform 0.3s; text-align: center;}
+    .card:hover {transform: scale(1.02);}
+    .card h3 {color: #d4af37; font-size: 22px; margin-bottom: 10px;}
+    .card p {margin-bottom: 15px;}
+    .whatsapp-btn {display: inline-block; padding: 12px 25px; background: #d4af37; color: #0a0a0a; font-weight: bold; border-radius: 8px; transition: background 0.3s;}
+    .whatsapp-btn:hover {background: #ffffff;}
+    .quote {margin: 40px 0; font-style: italic; color: #d4af37; font-size: 18px;}
+    /* ====== Footer ====== */
+    footer {text-align: center; padding: 20px; font-size: 14px; color: #aaaaaa;}
+    /* ====== Responsive ====== */
+    @media(max-width: 600px){ header h1{font-size:24px;} main h2{font-size:24px;} .card h3{font-size:20px;} }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>RXR RANA</h1>
+    <div class="lang-switch">
+        <button onclick="setLanguage('ar')">عربي</button>
+        <button onclick="setLanguage('en')">English</button>
+    </div>
+</header>
+
+<main id="content">
+
+<h2>✨ RANA PERSONAL CONSULTATIONS ✨</h2>
+
+<div class="card">
+<h3>💖🧋🧁 Tarot Q&A — $10</h3>
+<p>سؤال واحد تفصيلي مع قراءة واضحة، توجيه، وإرشاد طاقي.</p>
+<a class="whatsapp-btn" href="https://wa.me/201003897592" target="_blank">احجز الآن</a>
+</div>
+
+<div class="card">
+<h3>💖🧋🧁 Personal Consultations — $77</h3>
+<p>فضفضة آمنة + استشارات شخصية + إرشاد طاقي<br>مع 5 أسئلة تفصيلية.</p>
+<a class="whatsapp-btn" href="https://wa.me/201003897592" target="_blank">احجز الآن</a>
+</div>
+
+<div class="card">
+<h3>💖🧋🧁 $100 Personal Consultations</h3>
+<p>11 سؤال تفصيلي<br>قراءة شاملة + إرشاد طاقي يغطي جوانب حياتك المختلفة.</p>
+<a class="whatsapp-btn" href="https://wa.me/201003897592" target="_blank">احجز الآن</a>
+</div>
+
+<div class="card">
+<h3>💖🧋🧁 VIP Package 🪄✨ $222</h3>
+<p>جلسة خاصة جدًا<br>قراءة عميقة + استشارات شخصية<br>إرشاد طاقي + شفاء<br>أولوية الرد خلال 24 ساعة.</p>
+<a class="whatsapp-btn" href="https://wa.me/201003897592" target="_blank">احجز الآن</a>
+</div>
+
+<div class="card">
+<h3>🎓✨ Tarot Course ✨</h3>
+<p>كورس شامل لتعلم قراءة التاروت بعمق وبسهولة<br>يشمل فهم البطاقات، الطاقات، الربط، وتطوير الحدس بشكل عملي<br><strong>متاح الآن حجز كورس شامل</strong></p>
+<a class="whatsapp-btn" href="https://wa.me/201003897592" target="_blank">احجز الآن</a>
+</div>
+
+<div class="quote">
+*"Remember, you are truly unique in the world"<br>✨ أنت بالفعل قطعة إستثنائية وفريدة في الكوكب ✨</div>
+
+</main>
+
+<footer>
+© 2026 RXR RANA | WhatsApp: +2 0100 3897592
+</footer>
+
+<script>
+const content = document.getElementById('content');
+function setLanguage(lang){
+    if(lang === 'en'){
+        content.innerHTML = `
+<h2>✨ RANA PERSONAL CONSULTATIONS ✨</h2>
+
+<div class="card">
+<h3>💖🧋🧁 Tarot Q&A — $10</h3>
+<p>1 detailed question with clear reading, guidance, and energy advice.</p>
+<a class="whatsapp-btn" href="https://wa.me/201003897592" target="_blank">Book Now</a>
+</div>
+
+<div class="card">
+<h3>💖🧋🧁 Personal Consultations — $77</h3>
+<p>Safe space + personal consultation + energy guidance<br>Includes 5 detailed questions.</p>
+<a class="whatsapp-btn" href="https://wa.me/201003897592" target="_blank">Book Now</a>
+</div>
+
+<div class="card">
+<h3>💖🧋🧁 $100 Personal Consultations</h3>
+<p>11 detailed questions<br>Comprehensive reading + energy guidance covering all life aspects.</p>
+<a class="whatsapp-btn" href="https://wa.me/201003897592" target="_blank">Book Now</a>
+</div>
+
+<div class="card">
+<h3>💖🧋🧁 VIP Package 🪄✨ $222</h3>
+<p>Exclusive session<br>Deep reading + personal consultation<br>Energy guidance + healing<br>Priority reply within 24 hours.</p>
+<a class="whatsapp-btn" href="https://wa.me/201003897592" target="_blank">Book Now</a>
+</div>
+
+<div class="card">
+<h3>🎓✨ Tarot Course ✨</h3>
+<p>A comprehensive tarot course for deep and easy learning<br>Includes card meanings, energy, connections, and practical intuition development<br><strong>Book the full course now</strong></p>
+<a class="whatsapp-btn" href="https://wa.me/201003897592" target="_blank">Book Now</a>
+</div>
+
+<div class="quote">
+*"Remember, you are truly unique in the world"<br>✨ You are truly an exceptional and unique piece in this world ✨</div>
+        `;
+    } else {
+        location.reload(); // يرجع للعربي
+    }
+}
+</script>
+
+</body>
+</html>
